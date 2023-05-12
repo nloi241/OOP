@@ -10,6 +10,11 @@ public class Manager {
         this.product = new ArrayList<>();
     }
     
-    
+    public void addProdcut(Product product){
+        this.product.add(product);
+    }
+    public void showListProduct(){
+        this.product.forEach(o -> System.err.println(o.toString()));
+    }
 }
     
